@@ -2,7 +2,7 @@
 
 - [Getting started](./getting_started)
 - [Creating new apps](./create_new_app)
-- [Geting app's sources](./get_an_existing_app_s_sources)
+- [Getting app's sources](./get_an_existing_app_s_sources)
 - [Everyday app development](./app_development)
 - [Developing nRF Connect for Desktop core](./core_development)
 
