@@ -1,18 +1,18 @@
 ## Basics
 
 - [Getting started](./getting_started)
-- [Create new app](./create_new_app)
-- [Get an existing app's sources](./get_an_existing_app_s_sources)
+- [Creating new apps](./create_new_app)
+- [Geting app's sources](./get_an_existing_app_s_sources)
 - [Everyday app development](./app_development)
-- [Core development](./core_development)
+- [Developing nRF Connect for Desktop core](./core_development)
 
 ## API
 
 - [API reference](./api_reference)
 
-## Misc
+## Other topics
 
-- [Configuration](./configuration)
-- [Changelogs](./changelogs)
+- [Configuration reference](./configuration)
+- [Changelog guidelines](./changelogs)
 - [Installing local apps](./local_app_installation)
-- [Contributing](./contributing)
+- [Contributing guidelines](./contributing)

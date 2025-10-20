@@ -1,13 +1,16 @@
 ---
 ---
 
-# Contributing
+# Contributing guidelines
 
-Feel free to file code and documentation related issues on GitHub Issues and/or
-submit a pull request.
+Feel free to fork the repository of any nRF Connect for Desktop and clone it for secondary development or feature contributions.
 
-In order to accept your pull request, we need you to sign our Contributor
-License Agreement (CLA). You will see instructions for doing this after having
-submitted your first pull request. You only need to sign the CLA once, so if you
-have already done it for another project in the NordicSemiconductor
-organization, you are good to go.
+You are encouraged to:
+
+* Open issues related to source code and documentation using GitHub Issues.
+* Submit a pull request with feature contributions or bug fixes.
+
+If you open a pull request, you need to sign Nordic Semiconductor's Contributor License Agreement (CLA).
+You can see instructions for doing this after having submitting your first pull request.
+You only need to sign the CLA once, so if you have already done it for another project in the [NordicSemiconductor
+GitHub organization](https://github.com/NordicSemiconductor), you are good to go.
