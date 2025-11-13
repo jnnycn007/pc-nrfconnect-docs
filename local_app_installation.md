@@ -18,7 +18,7 @@ Another way, for a method that is easier to automate, but harder for users to ex
 
 1. Copy the file to `%USERPROFILE%\.nrfconnect-apps\local` (Windows) or
    `$HOME/.nrfconnect-apps/local` (Linux or macOS).
-2. Restart nRF Connect for Desktop (Ctrl-R on Windows or Linux, Cmd-R on macOS).
+2. Restart nRF Connect for Desktop by closing its instance and starting a new one.
    The app should now appear in the apps list.
 
 **Note:** If the app has the same name as an official app, it will appear twice in the

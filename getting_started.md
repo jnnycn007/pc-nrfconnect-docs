@@ -3,7 +3,7 @@
 
 # Getting started
 
-The following sections descrive the architecture for developing nRF Connect for Desktop apps.
+The following sections describe the architecture for developing nRF Connect for Desktop apps.
 
 ## Prerequisites
 
@@ -44,7 +44,7 @@ The core resides in the two projects: `pc-nrfconnect-launcher` and `pc-nrfconnec
 #### pc-nrfconnect-launcher
 
 [`pc-nrfconnect-launcher`](https://github.com/NordicSemiconductor/pc-nrfconnect-launcher)
-contains the following components:
+contains the following parts:
 
 - Launcher from which the apps are installed and launched; the launcher also coordinates access
   to shared resources, for example if multiple apps use the same serial port to access
@@ -101,7 +101,7 @@ The following projects aid the development of apps for nRF Connect for Desktop:
   the repo that contains the pages you are reading.
 - [`nrf-jlink-js`](https://github.com/NordicSemiconductor/nrf-jlink-js) - for checking
   if the user has the version of SEGGER J-Link installed that is currently
-  recommended for nRF Connect for Desktop; this component allows for downloading
+  recommended for nRF Connect for Desktop; this library allows for downloading
   the recommended version.
 
 ## Next steps

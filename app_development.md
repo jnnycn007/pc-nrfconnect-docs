@@ -33,7 +33,7 @@ Complete the following steps to run your application:
 1. Start nRF Connect for Desktop. The launcher finds all apps in
 `~/.nrfconnect-apps/local` and, using the `package.json` in your project, picks
 up the `dist/bundle.js` that was built before.
-1. Look for your app in the list with a “local” tag its name.
+1. Look for your app in the list with a “local” tag under its name.
 1. Launch the app.
 
 When you edit the source of the app and it is recompiled, press Ctrl-R (Windows or Linux) or Cmd-R
@@ -55,4 +55,4 @@ To distribute your development version of an app to others, run
 `npm pack`.
 
 This command creates a file that you can send to others so that they can
-[install that app locally](./local_app_installation). For example, for the `pc-nrfconnect-boilerplate` app, the file can be named `pc-nrfconnect-boilerplate-0.0.1.tgz`.
+[install that app locally](./local_app_installation). For example, for the `pc-nrfconnect-boilerplate` app, the file will be named `pc-nrfconnect-boilerplate-0.0.1.tgz`.

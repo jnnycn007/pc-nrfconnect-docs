@@ -3,7 +3,7 @@
 
 # API reference
 
-This page documents API requirements for developing apps for nRF Connect for Desktop.
+This page documents API usage when developing apps for nRF Connect for Desktop.
 
 ## Minimal API requirements
 
@@ -16,7 +16,7 @@ This alone is sufficient for the launcher to display and start your app.
 
 ## Recommended API changes
 
-If you want to build a more feature-rick app, you need more than [Minimal API requirements](#minimal-api-requirements).
+If you want to build a more feature-rich app, you need more than [Minimal API requirements](#minimal-api-requirements).
 In addition, use the prepared components from `pc-nrfconnect-shared` as it is demonstrated in
 [`pc-nrfconnect-boilerplate`](https://github.com/NordicSemiconductor/pc-nrfconnect-boilerplate)
 and [`pc-nrfconnect-rssi`](https://github.com/NordicSemiconductor/pc-nrfconnect-rssi).
@@ -42,9 +42,10 @@ Most apps will use the [`App`](https://github.com/NordicSemiconductor/pc-nrfconn
 The `App` component provides a scaffolding to place your own components, as well as a Redux store,
 which includes state and actions for the shared components.
 
-**Note:** You cannot easily use the Redux store when creating the `App`
-element, as the store will be created and provided by the `App` component. But
-you can use it about everywhere else, usually through React Redux using [hooks](https://react-redux.js.org/api/hooks) or
+**Note:** In the React component that uses the `App` component, you cannot yet use 
+the Redux store. This is because the store will be created and provided by that `App` component.
+However, you can already use it about everywhere else, usually through React Redux using 
+[hooks](https://react-redux.js.org/api/hooks) or 
 [the `connect` function](https://react-redux.js.org/api/connect).
 
 #### Properties
@@ -67,7 +68,7 @@ The `App` component has the following properties:
   clickable name in the navigation at the top and when clicked, the pane is
   displayed in the main view of the app.
 
-  The `panes` property is an array containing `Pane` objects - These must contain
+  The `panes` property is an array containing `Pane` objects. These must contain
   properties `name` and `Main` (the React component shown in the pane) and
   optional properties `SidePanel` (if that pane has its own side panel),
   `preHidden`, and `preDisabled`.

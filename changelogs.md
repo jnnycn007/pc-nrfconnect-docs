@@ -43,12 +43,14 @@ The following custom rules apply:
 
 - Make the text understandable for the target audience. Mention only what is
   relevant for them. Remember who the reader is:
-  - In apps and in the normal changelog of the launcher - write for _users_. They see the
+
+  - In apps and in the normal changelog of the launcher, write for _users_. They see the
     changelog in the launcher. Users are not aware and do not care about technical internals.
     For example, they do not know what it means that a library is upgraded.
     Instead, describe what (and if) the library upgrade leads to observable changes for them.
     For example, instead of “Upgraded nrfjprog to 10.11.1”, write “Added support for nRF53 devices”.
-  - In `Changelog.md` of shared and `Changelog.minor.md` of the launcher - write for _developers_.
+  - In `Changelog.md` of shared and `Changelog.minor.md` of the launcher, write for _developers_.
+
 - Unlike on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/): Do not add a preamble (“All notable changes to
   this project …”) in user-visible changelogs. It looks strange when viewed in
   the launcher.

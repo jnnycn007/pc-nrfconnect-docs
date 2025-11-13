@@ -47,7 +47,7 @@ Complete the following steps:
 
 2. Install the dependencies by running the following command:
    ```
-   npm install
+   npm ci
    ```
 
 3. Start the continuous compilation by running the following command:

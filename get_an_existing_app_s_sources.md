@@ -1,7 +1,7 @@
 ---
 ---
 
-# Getting app's sources
+# Getting app sources
 
 Before you get the sources of an existing nRF Connect for Desktop app, make sure you meet
 all the required [prerequisites](getting_started#prerequisites).

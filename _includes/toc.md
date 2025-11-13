@@ -1,8 +1,8 @@
 ## Basics
 
 - [Getting started](./getting_started)
-- [Creating new apps](./create_new_app)
-- [Getting app's sources](./get_an_existing_app_s_sources)
+- [Creating a new app](./create_new_app)
+- [Getting app sources](./get_an_existing_app_s_sources)
 - [Everyday app development](./app_development)
 - [Developing nRF Connect for Desktop core](./core_development)
 

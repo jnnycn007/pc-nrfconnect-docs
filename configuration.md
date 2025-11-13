@@ -44,7 +44,7 @@ The following `package.json` properties are required for nRF Connect for Desktop
 | `engines.nrfconnect`               | The nRF Connect for Desktop version (or versions) the app supports. Should be a valid [semantic versioning range](https://github.com/npm/node-semver#ranges). The launcher shows a warning if this is missing or incompatible.                |
 | `files`                            | The files to include when publishing the app on the npm registry. Make sure that this contains everything the app needs at runtime, for example code, icon, and resources.                                           |
 | `nrfConnectForDesktop.html`        | The HTML file the launcher displays in the app window, when loading the app. When using the default configurations from `pc-nrfconnect-shared`, this is `dist/index.html`.                                    |
-| `nrfConnectForDesktop.nrfutilCore` | Which [core version of nRF Util](https://docs.nordicsemi.com/bundle/nrfutil/page/nrfutil-core/CHANGELOG.html) the app depends upon. This defaults to v8.0.0.                                                        |
+| `nrfConnectForDesktop.nrfutilCore` | Which [core version of nRF Util](https://docs.nordicsemi.com/bundle/nrfutil/page/nrfutil-core/CHANGELOG.html) the app depends upon. This defaults to v8.1.1.                                                        |
 | `nrfConnectForDesktop.nrfutil.*`   | For each command of nRF Util the app uses (usually at least `device`), the version of this command to use.                                                                                                     |
 
 Other than these, we also recommend setting at least `license`, `homepage`,
@@ -52,7 +52,7 @@ Other than these, we also recommend setting at least `license`, `homepage`,
 
 ## App icon
 
-To have a custom preferred icon displayed for your app in the nRF Connect for Desktop launcher and the app's window title, add an `icon.svg` (preferred) or an `icon.png` file in the app directory.
+To have a custom icon displayed for your app in the nRF Connect for Desktop launcher and the app's window title, add an `icon.svg` (preferred) or an `icon.png` file in the app directory.
 
 The icon is displayed at 40x40 pixels in the nRF Connect for Desktop launcher, so make sure
 the icon is displaying in good quality when using this size.

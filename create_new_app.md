@@ -1,7 +1,7 @@
 ---
 ---
 
-# Creating new apps
+# Creating a new app
 
 Before you create a new app for nRF Connect for Desktop, make sure you meet
 all the required [prerequisites](getting_started#prerequisites).
@@ -10,8 +10,6 @@ You could start out with a blank Node.js project, but it is recommended to begin
 
 Complete the following steps to create a new app:
 
-1. Open the [`pc-nrfconnect-boilerplate`](https://github.com/NordicSemiconductor/pc-nrfconnect-boilerplate) project.
-   This is a minimal app recommended as a template for new apps.
 1. Clone `pc-nrfconnect-boilerplate` under the `~/.nrfconnect-apps/local`
    directory by running the following commands in a terminal on Linux or macOS, or in Git bash on Windows:
 
@@ -35,7 +33,7 @@ Complete the following steps to create a new app:
     - `license`
     - `repository.url`
 
-If you need to adjust the behavior of the app, you can also change the implementation in `index.tsx`.
+1. Change the template implementation in `index.tsx` according to your application needs.
 
 ## Next steps
 
