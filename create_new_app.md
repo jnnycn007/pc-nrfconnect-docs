@@ -1,37 +1,28 @@
 ---
 ---
 
-# How to create a new app for nRF Connect for Desktop
+# Creating a new app
 
-First make sure, all the needed [prerequisites](getting_started#prerequisites)
-are met.
+Before you create a new app for nRF Connect for Desktop, make sure you meet
+all the required [prerequisites](getting_started#prerequisites).
 
-## Create new app project
+You could start out with a blank Node.js project, but it is recommended to begin with the [`pc-nrfconnect-boilerplate`](https://github.com/NordicSemiconductor/pc-nrfconnect-boilerplate) project. While you could also copy an existing app (for example, [`pc-nrfconnect-npm`](https://github.com/NordicSemiconductor/pc-nrfconnect-npm) or [`pc-nrfconnect-rssi`](https://github.com/NordicSemiconductor/pc-nrfconnect-rssi)) and strip it of unneeded elements, it is better to start small and use the existing apps for reference.
 
-1.  Choose a template for the new project: While you could start out with a
-    blank Node.js project, we recommend to begin with
-    [`pc-nrfconnect-boilerplate`](https://github.com/NordicSemiconductor/pc-nrfconnect-boilerplate).
-    You could also begin with a more full fledged project like
-    [`pc-nrfconnect-npm`](https://github.com/NordicSemiconductor/pc-nrfconnect-npm)
-    or a smaller one like
-    [`pc-nrfconnect-rssi`](https://github.com/NordicSemiconductor/pc-nrfconnect-rssi)
-    and strip out what you do not need, but our recommendation is to just look
-    at these for reference. If you choose something different than using
-    `pc-nrfconnect-boilerplate`, then adjust the next step accordingly.
+Complete the following steps to create a new app:
 
-1.  Clone `pc-nrfconnect-boilerplate` under the `~/.nrfconnect-apps/local`
-    directory. In a terminal on Linux/macOS or Git bash on Windows:
+1. Clone `pc-nrfconnect-boilerplate` under the `~/.nrfconnect-apps/local`
+   directory by running the following commands in a terminal on Linux or macOS, or in Git bash on Windows:
 
         cd $HOME/.nrfconnect-apps/local
         git clone https://github.com/NordicSemiconductor/pc-nrfconnect-boilerplate.git pc-nrfconnect-myapp
         cd pc-nrfconnect-myapp
         rm -rf .git
 
-    If you prefer it, you can also create the project directory anywhere else
-    and create a symbolic link from `~/.nrfconnect-apps/local` to the project
-    directory.
+   If you prefer it, you can also create the project directory anywhere else
+   and create a symbolic link from `~/.nrfconnect-apps/local` to the project
+   directory.
 
-1.  Modify relevant properties in `package.json`. At least consider changing:
+1. Modify relevant properties in `package.json`. At the very least, consider changing the following ones:
 
     - `name`
     - `displayName`
@@ -42,11 +33,12 @@ are met.
     - `license`
     - `repository.url`
 
+1. Change the template implementation in `index.tsx` according to your application needs.
+
 ## Next steps
 
 You now have everything set up for
-[everyday app development](./app_development), so read up about that. Then
-change the implementation in `index.tsx` to adjust the behavior of the app.
+[everyday app development](./app_development).
 
 Read the further documentation beginning with the
 [API reference](./api_reference) and source code of the official apps to get a

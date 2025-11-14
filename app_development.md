@@ -1,53 +1,58 @@
 ---
 ---
 
-# How to do app development for nRF Connect for Desktop
+# Everyday app development
 
-You either [created a project for a new app](./create_new_app) or
-[got the sources of an existing app](./get_an_existing_app_s_sources). This is
-how you do everyday development now:
+After you [created a project for a new app](./create_new_app) or
+[got the sources of an existing app](./get_an_existing_app_s_sources), you can start developing
+your app.
 
 ## Install dependencies
 
-Like on most Node.js projects, you need to install the dependencies once at the
-beginning with `npm ci` and only need to repeat that later if the dependencies
-change.
+Install the required Node.js dependencies with the `npm ci` command.
+
+You need to do this at the beginning of the development process.
+Later, this is required only if the dependencies change.
 
 ## Compiling
 
-During active development we recommend to run `npm run watch`: It compiles and
-packs all your code into `dist/bundle.js` as well as continuously checking the
-types. It then waits, watches your code and whenever you save source files it
-creates a new `dist/bundle.js` (`Ctrl+C` to stop).
+You can use the following commands for compiling your application:
 
-If you just want to compile and pack the code only once, you can use
-`npm run build:dev` instead. There is also `npm run build:prod` which too
-creates a `dist/bundle.js` once, but contrary to `watch` and `build:dev` it is
-optimized for production use (e.g. the bundle is minified).
+* `npm run watch` (recommended) - This command compiles and packs all your code into `dist/bundle.js`.
+  It also continuously checks the types. It then waits and watches your code. Whenever you save source files, it
+  creates a new `dist/bundle.js`. You can stop it at any time with Ctrl-C.
+
+* `npm run build:dev` - If you just want to compile and pack the code only once.
+
+* `npm run build:prod` - If you want to create a `dist/bundle.js` package that is optimized for production use (for example, the bundle is minified).
 
 ## Running
 
-Start nRF Connect for Desktop. It will find all apps in
-`~/.nrfconnect-apps/local` and through the `package.json` in your project pick
-up the `dist/bundle.js` that was build before. Because of this, it display the
-app it in the list of all apps with a “local” underneath it and you can launch
-it from there.
+Complete the following steps to run your application:
 
-When you edit the source of the app and it is recompiled (probably by keeping
-`npm run watch` running), pressing `Ctrl+R` (Windows or Linux) or `Cmd+R`
-(macOS) in the running app window will make it reload.
+1. Start nRF Connect for Desktop. The launcher finds all apps in
+`~/.nrfconnect-apps/local` and, using the `package.json` in your project, picks
+up the `dist/bundle.js` that was built before.
+1. Look for your app in the list with a “local” tag under its name.
+1. Launch the app.
 
-Chrome Developer Tools can be opened by pressing `Ctrl+Alt+I` (Windows/Linux) or
-`Cmd+Option+I` (macOS).
+When you edit the source of the app and it is recompiled, press Ctrl-R (Windows or Linux) or Cmd-R
+(macOS) in the running app window to reload it.
+
+Chrome Developer Tools can be opened by pressing Ctrl-Alt-I (Windows or Linux) or
+Cmd-Option-I (macOS).
 
 ## Testing
 
-You can run the static checks (like linting and type checking) with
-`npm run check` and the unit tests with `npm test`.
+You can use the following commands for testing:
 
-## Distribute development versions
+* `npm run check` - For running static checks like linting and type checking
+* `npm test` - For unit tests
 
-When you want to give your development version of an app to others, run
-`npm pack`. This will create a file like `pc-nrfconnect-boilerplate-0.0.1.tgz`,
-which you can send to others, who are supposed to test your app. Then they can
-[install that app locally](./local_app_installation).
+## Distributing development versions
+
+To distribute your development version of an app to others, run
+`npm pack`.
+
+This command creates a file that you can send to others so that they can
+[install that app locally](./local_app_installation). For example, for the `pc-nrfconnect-boilerplate` app, the file will be named `pc-nrfconnect-boilerplate-0.0.1.tgz`.

@@ -3,8 +3,7 @@
 
 # Developer documentation for nRF Connect for Desktop
 
-This documentation describes how to develop nRF Connect for Desktop: Either if
-you want to create a new app, change an existing app or change the core that
-ties nRF Connect for Desktop together.
+Read this documentation if you want to create a new nRF Connect for Desktop app, modify an existing
+app or modify the core of nRF Connect for Desktop itself.
 
 {% include toc.md %}
